@@ -1,0 +1,14 @@
+- name: "pidgeot-engine"
+  link: https://github.com/zacharyvincze/pidgeot-engine
+
+- name: "nintendo-emulation-system"
+  link: https://github.com/zacharyvincze/nintendo-emulation-system
+
+- name: esp32-i2c-eeprom
+  link: https://github.com/zacharyvincze/esp32-i2c-eeprom
+
+- name: OpenForum
+  link: https://github.com/zacharyvincze/OpenForum
+
+- name: pokemon-red-sdl2
+  link: https://github.com/zacharyvincze/pokemon-red-sdl2

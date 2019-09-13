@@ -1,0 +1,30 @@
+.text {
+}
+
+.text-small, p {
+    font-size: $small-size;
+    font-weight: normal;
+}
+
+.text-faded {
+    opacity: 0.5;
+}
+
+.text-header {
+    a {
+        color: $accent-color;
+        font-size: $header-size;
+        transition: all 0.2s ease;
+        opacity: 1;
+    }
+
+    a:hover {
+        opacity: 0.6;
+    }
+}
+
+.text-category {
+    color: $accent-color;
+    font-size: $default-size;
+    font-weight: bold;
+}

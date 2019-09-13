@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+$header-font: 'Poppins', sans-serif;
+$text-font: 'Roboto', 'Open Sans', sans-serif;
+
+$small-size: 16px;
+$default-size: 18px;
+$header-size: 24px;
+$logo-size: 28px;
+$default-line-spacing: 1.5;
+$condensed-line-spacing: 1.35;
+
+$base-color: #000000;
+$accent-color: #f44336;
+$text-color: #2A2A2A;
+$background-color: #FFFFFF;
+$floating-color: #F8F8FF;
+$faded-color: #EFEFEF;
+
+// CSS reset
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+html {
+    font-family: $text-font;
+    background-color: $background-color;
+    color: $text-color;
+    font-size: 1rem;
+    line-height: $condensed-line-spacing;
+}
+
+a {
+    font-family: $text-font;
+    font-size: $small-size;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+    color: $text-color;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $accent-color;
+    opacity: 1;
+}
+
+.container {
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo">{{ site.title }}</a>
+        {% for item in site.data.navigation %}
+        <a class="link {% if page.url == item.link %}selected {% endif %}" href="{{ item.link }}">
+            {{ item.name }}
+        </a>
+        {% endfor %}
+    </nav>
+    <div class=" container">
+        <section>
+            <div class=" sidebar">
+                <div class="profile">
+                    <image class="profile-picture"></image>
+                    <p class="description">{{ site.description }}</p>
+                    <div class="social-media">
+                        <a href="https://twitter.com/{{ site.twitter_username }}">
+                            <image class="icon" src="/assets/svg/twitter.svg"></image>
+                        </a>
+                        <a href="https://github.com/{{ site.github_username }}">
+                            <image class="icon" src="/assets/svg/github.svg"></image>
+                        </a>
+                        <a href="{{ site.stackoverflow_userpage }}">
+                            <image class="icon" src="/assets/svg/stackoverflow.svg"></image>
+                        </a>
+                    </div>
+                </div>
+                <div class="projects">
+                    <h2 class="text-category">Projects</h2>
+                    {% for item in site.data.projects %}
+                    <a href="{{ item.link }}">{{ item.name }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+            {{content}}
+        </section>
+    </div>
+</body>
+
+</html>

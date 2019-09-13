@@ -1,0 +1,58 @@
+.navbar {
+    height: 80px;
+    vertical-align: middle;
+
+    .link {
+        font-family: $header-font;
+        font-size: $header-size;
+        color: $text-color;
+        margin-right: 20px;
+        opacity: 0.4;
+        float: right;
+        transition: all 0.2s ease;
+        line-height: 80px;
+    }
+
+    a:hover {
+        opacity: 0.8;
+        color: $accent-color;
+    }
+
+    .selected {
+        opacity: 1;
+        color: $accent-color;
+    }
+
+    .logo {
+        display: inline-block;
+        font-size: $header-size;
+        color: $accent-color;
+        font-size: $logo-size;
+        font-weight: bold;
+        margin-left: 20px;
+        opacity: 1;
+        line-height: 80px;
+    }
+}
+
+// Mobile device support
+@media only screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar {
+        padding: 10px 0;
+        background-color: $floating-color;
+        display: flex;
+        justify-content: center;
+
+        .logo {
+            margin-left: 0;
+        }
+
+        a {
+            display: none;
+        }
+    }
+}

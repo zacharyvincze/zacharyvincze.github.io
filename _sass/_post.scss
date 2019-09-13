@@ -1,0 +1,25 @@
+.post-content {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    flex: 1;
+    line-height: $default-line-spacing;
+
+    .post-title {
+        font-size: $logo-size;
+        font-family: $header-font;
+        color: $accent-color;
+    }
+
+    .post-date {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .post-content {
+        margin: 0;
+        width: auto;
+        flex: 0;
+    }
+}
