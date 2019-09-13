@@ -1,9 +1,10 @@
 .post-content {
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 20px;
     flex: 1;
     line-height: $default-line-spacing;
+    overflow: hidden;
 
     .post-title {
         font-size: $logo-size;
@@ -16,7 +17,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $mobile-viewport) {
     .post-content {
         margin: 0;
         width: auto;

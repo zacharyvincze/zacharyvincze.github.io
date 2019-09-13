@@ -12,7 +12,9 @@ title: Development Log
         <div class="post-information">
             <h2 class="text-header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <h2 class="post-date text text-faded">{{ post.date | date: "%-d %B %Y" }}</h2>
-            <h2 class="text text-small">{{ post.excerpt }}</h2>
+            <div class="excerpt-content">
+                {{ post.excerpt }}
+            </div>
         </div>
     </div>
     {% endfor %}

@@ -1,0 +1,87 @@
+
+// Header formatting
+$h1-font-size: 28px;
+$h2-font-size: 22px;
+$h3-font-size: 18px;
+$h4-font-size: 16px;
+$h5-font-size: 14px;
+$h6-font-size: 12px;
+
+$header-bottom-margin: 20px;
+$header-border-bottom: 2px solid #EFEFEF;
+
+.excerpt-content, .post-writing {
+    img {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: bold;
+        margin-bottom: $header-bottom-margin;
+    }
+
+    h1 {
+        font-size: $h1-font-size;
+        color: $accent-color;
+        display: block;
+        border-bottom: $header-border-bottom;
+        padding-bottom: 3px;
+    }
+
+    h2 {
+        font-size: $h2-font-size;
+        color: $accent-color;
+        display: block;
+        border-bottom: $header-border-bottom;
+        padding-bottom: 3px;
+    }
+
+    h3 {
+        font-size: $h3-font-size;
+        color: $accent-color;
+    }
+
+    h4 {
+        font-size: $h4-font-size;
+        color: $accent-color;
+    }
+
+    h5 {
+        font-size: $h5-font-size;
+        color: $accent-color;
+    }
+
+    h6 {
+        font-size: $h6-font-size;
+        color: $text-color;
+        opacity: 0.6;
+    }
+
+    ul, ol {
+        margin-left: 40px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    div {
+        line-break: normal;
+    }
+
+    pre {
+        line-break: normal;
+        overflow: auto;
+        word-wrap: normal;
+        width: auto;
+    }
+
+    code {
+        line-break: normal;
+    }
+}
+
+.post-writing {
+    width: 100%;
+}

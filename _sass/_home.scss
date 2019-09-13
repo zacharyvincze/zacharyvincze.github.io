@@ -5,7 +5,8 @@
     flex: 1;    // Grow the page so that it takes up the available space
     line-height: $default-line-spacing;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1200px;
+    overflow: hidden;
 
     .post {
         background-color: white;
@@ -29,8 +30,9 @@
 
         .post-information {
             padding: 20px;
-            .excerpt {
-                color: red;
+
+            .excerpt-content {
+                opacity: 0.8;
             }
 
             .post-date {
@@ -45,7 +47,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $mobile-viewport) {
     .posts {
         padding: 0;
         margin: 0;

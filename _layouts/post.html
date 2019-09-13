@@ -45,7 +45,9 @@
             <div class="post-content">
                 <h1 class="post-title">{{ page.title }}</h1>
                 <h2 class="post-date text text-faded">Written {{ page.date | date: "%-d %B %Y" }}</h2>
-                {{content}}
+                <div class="post-writing">
+                    {{content}}
+                </div>
             </div>
         </section>
     </div>

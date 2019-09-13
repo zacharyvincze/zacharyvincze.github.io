@@ -18,6 +18,8 @@ $background-color: #FFFFFF;
 $floating-color: #F8F8FF;
 $faded-color: #EFEFEF;
 
+$mobile-viewport: 1000px;
+
 // CSS reset
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
     margin: 0;
@@ -65,7 +67,7 @@ section {
     justify-content: flex-start;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $mobile-viewport) {
     section {
         flex-direction: column;
         justify-content: center;
