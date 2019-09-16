@@ -4,6 +4,7 @@
     padding: 20px 20px;
     background-color: $floating-color;
     min-height: calc(100vh - 120px);
+    transition: 0.2s all ease;
 
     .profile {
         .description {
@@ -51,6 +52,12 @@
             color: $accent-color;
             opacity: 1;
         }
+    }
+}
+
+@media only screen and (max-width: $tablet-viewport) {
+    .sidebar {
+        width: 200px;
     }
 }
 
