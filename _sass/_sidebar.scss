@@ -19,6 +19,7 @@
                 width: 30px;
                 opacity: 0.5;
                 transition: opacity 0.2s ease;
+                fill: white;
             }
             .icon:hover {
                 cursor: pointer;
@@ -26,7 +27,7 @@
             }
         }
         padding-bottom: 20px;
-        border-bottom: 2px solid #EFEFEF;
+        border-bottom: 2px solid $bottom-border-color;
     }
 
     .projects {
@@ -41,7 +42,7 @@
         a {
             font-family: $text-font;
             font-size: $small-size;
-            opacity: 0.6;
+            opacity: 0.75;
             transition: all 0.2s ease;
             display: block;
             padding-bottom: 10px;

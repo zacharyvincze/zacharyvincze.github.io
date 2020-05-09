@@ -1,6 +1,6 @@
 .posts {
     order: 1;
-    background-color: white;
+    background-color: $background-color;
     padding: 20px 20px;
     flex: 1;    // Grow the page so that it takes up the available space
     line-height: $default-line-spacing;
@@ -9,9 +9,9 @@
     overflow: hidden;
 
     .post {
-        background-color: white;
+        background-color: $background-color;
         margin-bottom: 20px;
-        border-bottom: 2px solid $faded-color;
+        border-bottom: 2px solid $bottom-border-color;
 
         .post-image {
             height: 400px;

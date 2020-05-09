@@ -11,6 +11,11 @@
 }
 
 .text-header {
+    color: $accent-color;
+    font-size: $header-size;
+    transition: all 0.2s ease;
+    opacity: 1;
+
     a {
         color: $accent-color;
         font-size: $header-size;

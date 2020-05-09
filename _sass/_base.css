@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+p {
+  padding-bottom: 20px;
+}
+html {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  background-color: #121212;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+a {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #f44336;
+  opacity: 1;
+}
+.container {
+  margin: auto;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 600px) {
+  section {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

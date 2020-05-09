@@ -9,11 +9,15 @@
     .post-title {
         font-size: $logo-size;
         font-family: $header-font;
-        color: $accent-color;
+        color: $text-color;
     }
 
     .post-date {
         margin-bottom: 20px;
+    }
+
+    .post-writing {
+        opacity: 0.75;
     }
 }
 
