@@ -2,6 +2,10 @@
     height: 80px;
     vertical-align: middle;
 
+    .links {
+        float: right;
+    }
+
     .link {
         font-family: $header-font;
         font-size: $header-size;
@@ -41,18 +45,32 @@
         flex-direction: column;
         justify-content: center;
     }
+
     .navbar {
-        padding: 10px 0;
-        background-color: $floating-color;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        background-color: $floating-color;
 
         .logo {
-            margin-left: 0;
+            display: block;
+            line-height: normal;
+            margin-left: 0px;
         }
 
-        a {
-            display: none;
+        .links {
+            display: flex;
+            float: none;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+
+            .link {
+                float: none;
+                line-height: normal;
+                margin-right: 0px;
+            }
         }
     }
 }
