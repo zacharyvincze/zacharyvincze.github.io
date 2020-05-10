@@ -33,25 +33,24 @@ $header-border-bottom: 2px solid $bottom-border-color;
 
     h2 {
         font-size: $h2-font-size;
-        color: $accent-color;
+        color: $text-color;
         display: block;
-        border-bottom: $header-border-bottom;
         padding-bottom: 3px;
     }
 
     h3 {
         font-size: $h3-font-size;
-        color: $accent-color;
+        color: $text-color;
     }
 
     h4 {
         font-size: $h4-font-size;
-        color: $accent-color;
+        color: $text-color;
     }
 
     h5 {
         font-size: $h5-font-size;
-        color: $accent-color;
+        color: $text-color;
     }
 
     h6 {
