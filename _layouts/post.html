@@ -1,9 +1,14 @@
 {% include header.html %}
-<div class="post-content">
+<div class="post-content" id="post-content">
     <h1 class="post-title">{{ page.title }}</h1>
     <h2 class="post-date text text-faded">{{ page.date | date: "%-d.%m.%Y" }}</h2>
     <div class="post-writing">
         {{content}}
     </div>
 </div>
+
+<script type="text/javascript">
+    window.location.hash = '#post-content';
+</script>
+
 {% include footer.html %}
