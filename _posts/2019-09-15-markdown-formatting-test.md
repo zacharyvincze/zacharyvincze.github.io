@@ -2,6 +2,7 @@
 layout: post
 title: Markdown Formatting Test
 date: 2019-09-15 13:18:21
+tags: [C++, EmulationDevelopment]
 ---
 
 Welcome to my simple markdown formatting test.

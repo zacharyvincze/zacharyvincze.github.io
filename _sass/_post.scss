@@ -13,11 +13,26 @@
     }
 
     .post-date {
-        margin-bottom: 20px;
+        display: inline;
     }
 
     .post-writing {
         opacity: 0.75;
+        margin-top: 20px;
+    }
+
+    .post-tags-border {
+        display: inline;
+        background-color: $accent-color;
+        margin: 0px 10px;
+        border-radius: 5px;
+    }
+
+    .post-tags {
+        display: inline;
+        color: white;
+        padding: 10px 10px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
     }
 }
 
