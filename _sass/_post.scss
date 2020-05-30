@@ -7,7 +7,7 @@
     overflow: hidden;
 
     .post-title {
-        font-size: $logo-size;
+        font-size: $title-size;
         font-family: $header-font;
         color: $text-color;
     }
@@ -18,7 +18,11 @@
 
     .post-writing {
         opacity: 0.75;
-        margin-top: 20px;
+        margin-top: 75px;
+
+        p {
+            font-size: $default-size;
+        }
     }
 
     .post-tags-border {
