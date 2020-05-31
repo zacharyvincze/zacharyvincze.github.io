@@ -116,7 +116,7 @@ When we ask a dog to fetch a ball, it brings that ball right back to us. Unfortu
 Opcodes are fetched from the memory location currently stored in the program counter. Once those opcodes are read from memory, the program counter register increments by the amount of bytes that were fetched from memory. In the case of the CHIP-8, we'd increment the program counter by 2, since each opcode is 2 bytes long.
 
 ## Decode
-Well now, thanks to the CPU, we have an opcode a single instruction for the CPU to use. But right now all it looks like is a number, when we decode, we are telling the CPU exactly what that opcode means.
+Thanks to the CPU, we have an opcode, a single instruction, for the CPU to use. When we decode, we are telling the CPU exactly what that opcode means.
 
 Now's the time to bust out the CHIP-8 instruction set reference that I mentioned prior. Take a look at what the fetched opcode number corresponds to. Using this newfound knowledge, we need to guide the CPU in the right direction.
 
