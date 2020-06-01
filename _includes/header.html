@@ -9,21 +9,12 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="/" class="logo">{{ site.title }}</a>
-        <div class="links">
-            {% for item in site.data.navigation %}
-            <a class="link {% if page.url == item.link %}selected {% endif %}" href="{{ item.link }}">
-                {{ item.name }}
-            </a>
-            {% endfor %}
-        </div>
-    </nav>
     <div class=" container">
         <section>
             <div class=" sidebar">
                 <div class="profile">
-                    <image class="profile-picture"></image>
+                    <div class="profile-picture"></div>
+                    <a href="/" class="logo">{{ site.title }}</a>
                     <p class="description">{{ site.description }}</p>
                     <div class="social-media">
                         <a href="https://twitter.com/{{ site.twitter_username }}">
@@ -37,10 +28,20 @@
                         </a>
                     </div>
                 </div>
+                <!--
                 <div class="projects">
                     <h2 class="text-category">Projects</h2>
                     {% for item in site.data.projects %}
                     <a href="{{ item.link }}">{{ item.name }}</a>
                     {% endfor %}
                 </div>
+                <div class="projects">
+                    <h2 class="text-category">Navigation</h2>
+                    {% for item in site.data.navigation %}
+                    <a class="link {% if page.url == item.link %}selected {% endif %}" href="{{ item.link }}">
+                        {{ item.name }}
+                    </a>
+                    {% endfor %}
+                </div>
+                -->
             </div>

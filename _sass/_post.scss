@@ -1,8 +1,7 @@
-.post-content {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-    flex: 1;
+.post-content, .posts {
+    margin-left: 440px;
+    max-width: 800px;
+    padding: 125px 100px;
     line-height: $default-line-spacing;
     overflow: hidden;
 
@@ -40,10 +39,19 @@
     }
 }
 
+@media only screen and (max-width: $tablet-viewport) {
+    .post-content, .posts {
+        margin-left: 240px;
+        width: auto;
+        flex: 0;
+    }
+}
+
 @media only screen and (max-width: $mobile-viewport) {
-    .post-content {
+    .post-content, .posts {
         margin: 0;
         width: auto;
         flex: 0;
+        padding: 50px;
     }
 }

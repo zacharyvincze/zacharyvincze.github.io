@@ -1,7 +1,10 @@
 .navbar {
     height: 80px;
-    vertical-align: middle;
     padding: 0px;
+    position: fixed;
+    z-index: 2;
+    float: right;
+    left: 20px;
 
     .links {
         float: right;
@@ -26,18 +29,6 @@
     .selected {
         opacity: 1;
         color: $accent-color;
-    }
-
-    .logo {
-        display: inline-block;
-        font-size: $header-size;
-        color: $accent-color;
-        font-size: $logo-size;
-        font-weight: bold;
-        margin-left: 20px;
-        opacity: 1;
-        line-height: 80px;
-        margin-bottom: 0px;
     }
 }
 

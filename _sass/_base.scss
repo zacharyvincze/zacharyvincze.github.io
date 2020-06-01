@@ -17,6 +17,7 @@ $accent-color: #f44336;
 $text-color: #FFFFFF;
 $background-color: #121212;
 $floating-color: #1F1F1F;
+$dark-floating-color: #191919;
 $faded-color: #EFEFEF;
 $bottom-border-color: #1F1F1F;
 
@@ -62,12 +63,6 @@ a:hover {
 
 .container {
     margin: auto;
-}
-
-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
 }
 
 @media only screen and (max-width: $mobile-viewport) {

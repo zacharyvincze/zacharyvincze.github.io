@@ -1,15 +1,46 @@
 .sidebar {
-    order: 0;
+    position: fixed;
     width: 400px;
     padding: 20px 20px;
     background-color: $floating-color;
-    min-height: calc(100vh - 120px);
     transition: 0.2s all ease;
+    z-index: 1;
+    height: 100%;
 
     .profile {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        width: 400px;
+        padding: 0 20px;
+        .logo {
+            display: block;
+            font-size: $header-size;
+            color: $accent-color;
+            font-size: $logo-size;
+            font-weight: bold;
+            text-align: center;
+            opacity: 1;
+            margin-bottom: 50px;
+        }
+
+        .profile-picture {
+            height: 200px;
+            width: 200px;
+            background-image: url('/assets/images/profile-picture.png');
+            background-color: $dark-floating-color;
+            background-size: 250px;
+            background-position: center;
+            border-radius: 100px;
+            margin: 0px auto;
+            margin-bottom: 25px;
+        }
+
         .description {
             opacity: 0.8;
             font-size: $small-size;
+            text-align: center;
         }
 
         .social-media {
@@ -27,8 +58,6 @@
                 opacity: 1;
             }
         }
-        padding-bottom: 20px;
-        border-bottom: 2px solid $bottom-border-color;
     }
 
     .projects {
@@ -60,20 +89,41 @@
 @media only screen and (max-width: $tablet-viewport) {
     .sidebar {
         width: 200px;
+
+        .profile {
+            width: 200px;
+
+            .profile-picture {
+                height: 150px;
+                width: 150px;
+                background-size: 200px;
+            }
+        }
     }
 }
 
 @media only screen and (max-width: $mobile-viewport) {
     .sidebar {
         max-width: none;
+        height: auto;
         width: 100%;
         padding: 0;
         min-height: auto;
+        position: relative;
+        top: auto;
+        left: auto;
 
         .profile {
             // border-bottom: none;
             // padding-bottom: 0;
-            margin: 0 20px;
+            position: relative;
+            transform: translateY(0);
+            width: 100%;
+            padding: 20px 0;
+
+            .profile-picture {
+                display: none;
+            }
         }
 
         .projects {
