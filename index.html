@@ -12,7 +12,7 @@ title: Zachary Vincze's Dev Log
             </div>
             <div class="post-information">
                 <h2 class="text-header"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
-                <h2 class="post-date text text-faded">{{ post.date | date: "%-d %B %Y" }}</h2>
+                <h2 class="post-date text text-faded">{{ post.date | date: "%-d %B %Y" }} | Written by {{ post.author }}</h2>
                 <div class="excerpt-content">
                     {{ post.excerpt }}
                 </div>
