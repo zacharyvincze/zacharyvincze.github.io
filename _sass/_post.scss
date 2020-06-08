@@ -1,6 +1,10 @@
-.post-content, .posts {
+.content-container {
     margin-left: 440px;
-    max-width: 800px;
+}
+
+.post-content, .posts {
+    max-width: 900px;
+    margin: 0 auto;
     padding: 125px 100px;
     line-height: $default-line-spacing;
     overflow: hidden;
@@ -16,7 +20,6 @@
     }
 
     .post-writing {
-        opacity: 0.75;
         margin-top: 75px;
 
         p {
@@ -41,9 +44,12 @@
 
 @media only screen and (max-width: $tablet-viewport) {
     .post-content, .posts {
-        margin-left: 240px;
         width: auto;
         flex: 0;
+    }
+
+    .content-container {
+        margin-left: 240px;
     }
 }
 

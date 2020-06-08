@@ -1,14 +1,16 @@
 {% include header.html %}
-<div class="post-content" id="post-content">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <h2 class="post-date text text-faded">{{ page.date | date: "%-d.%m.%Y" }}</h2>
-    {% for tag in page.tags %}
-    <div class="post-tags-border">
-        <h2 class="post-tags text">{{tag}}</h2>
-    </div>
-    {% endfor %}
-    <div class="post-writing">
-        {{content}}
+<div class="content-container">
+    <div class="post-content" id="post-content">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <h2 class="post-date text text-faded">{{ page.date | date: "%-d.%m.%Y" }}</h2>
+        {% for tag in page.tags %}
+        <div class="post-tags-border">
+            <h2 class="post-tags text">{{tag}}</h2>
+        </div>
+        {% endfor %}
+        <div class="post-writing">
+            {{content}}
+        </div>
     </div>
 </div>
 

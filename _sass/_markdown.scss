@@ -19,9 +19,9 @@ $header-border-bottom: 2px solid $bottom-border-color;
     }
 
     h1,h2,h3,h4,h5,h6 {
-        font-weight: bold;
         margin-bottom: $header-bottom-margin;
         padding-top: 50px;
+        font-family: $header-font;
     }
 
     h1 {
@@ -45,7 +45,6 @@ $header-border-bottom: 2px solid $bottom-border-color;
     h3 {
         font-size: $h3-font-size;
         color: $text-color;
-        text-decoration: underline;
     }
 
     h4 {
@@ -96,6 +95,10 @@ $header-border-bottom: 2px solid $bottom-border-color;
     tbody tr:nth-child(odd){
         background-color: #4C8BF5;
         color: #fff;
+    }
+
+    p, li {
+        opacity: 0.75;
     }
 }
 
