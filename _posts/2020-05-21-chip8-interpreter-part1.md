@@ -3,6 +3,7 @@ layout: post
 title: Writing a CHIP-8 Interpreter - Introduction
 date: 2020-05-30 17:07:00
 tags: [C++, EmuDev, CHIP-8]
+permalink: /writing-a-chip8-interpreter-introduction/
 ---
 
 Emulation development can be a tricky subject to wrap one's head around, so it's best to start simple and work your way up. Enter the CHIP-8, an interpreted programming language developed by Joseph Weisbecker in the mid-1970s. Nowadays, this language is commonly used as a stepping stone for those interested in emulation development.
