@@ -97,8 +97,17 @@ $header-border-bottom: 2px solid $bottom-border-color;
         color: #fff;
     }
 
-    p, li {
+    p, li, a {
         opacity: 0.75;
+        font-size: $default-size;
+    }
+
+    a {
+        color: $accent-color;
+    }
+
+    a:hover {
+        opacity: 1;
     }
 }
 
