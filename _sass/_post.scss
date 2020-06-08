@@ -55,9 +55,12 @@
 
 @media only screen and (max-width: $mobile-viewport) {
     .post-content, .posts {
-        margin: 0;
         width: auto;
         flex: 0;
         padding: 25px;
+    }
+
+    .content-container {
+        margin-left: 0px;
     }
 }
