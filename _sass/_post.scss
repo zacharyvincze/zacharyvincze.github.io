@@ -5,9 +5,10 @@
 .post-content, .posts {
     max-width: 900px;
     margin: 0 auto;
-    padding: 125px 100px;
+    padding: 125px 100px 10px;
     line-height: $default-line-spacing;
     overflow: hidden;
+    margin-bottom: 100px;
 
     .post-title {
         font-size: $title-size;
@@ -21,6 +22,7 @@
 
     .post-writing {
         margin-top: 75px;
+        margin-bottom: 100px;
 
         p {
             font-size: $default-size;
@@ -46,7 +48,24 @@
         height: 50px;
     }
 
+    #appreciation-text {
+        display: inline;
+        font-family: $header-font;
+        opacity: 0.25;
+        padding-bottom: 0px;
+        font-size: 14px;
+        line-height: 25px;
+        float: right;
+        vertical-align: middle;
+    }
 
+    #appreciation-heart {
+        display: inline-block;
+        height: 25px;
+        float: right;
+        padding-right: 5px;
+        vertical-align: middle;
+    }
 }
 
 @media only screen and (max-width: $tablet-viewport) {
