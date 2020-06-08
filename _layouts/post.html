@@ -1,6 +1,21 @@
 {% include header.html %}
 <div class="content-container">
     <div class="post-content" id="post-content">
+        <a href="/"><svg id="back-arrow" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                viewBox="0 0 172 172" style=" fill:#FFFFFF;">
+                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                    stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                    font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                    style="mix-blend-mode: normal">
+                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                    <g fill="#ffffff">
+                        <path
+                            d="M71.66667,35.32943l-50.67057,50.67057l50.67057,50.67057l10.75,-10.75l-32.75391,-32.7539h100.83724v-14.33333h-100.83724l32.75391,-32.75391z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </a>
         <h1 class="post-title">{{ page.title }}</h1>
         <h2 class="post-date text text-faded">{{ page.date | date: "%-d.%m.%Y" }}</h2>
         {% for tag in page.tags %}
