@@ -11,7 +11,7 @@ title: Zachary Vincze's Dev Log
                 <div class="post-image-child" style="background-image: url(/assets/images/{{ post.image }})"></div>
             </div>
             <div class="post-information">
-                <h2 class="text-header"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2 class="text-header"><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
                 <h2 class="post-date text text-faded">{{ post.date | date: "%-d %B %Y" }}</h2>
                 <div class="excerpt-content">
                     {{ post.excerpt }}
