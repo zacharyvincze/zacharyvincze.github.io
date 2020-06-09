@@ -20,8 +20,9 @@
 
 title: Zachary Vincze
 email: zacharyvincze@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Computer scientist studying at the University of Toronto. C, C++, Python,
+description:
+  Zach, Zachary, or Zachariah Vincze, whatever's easiest to pronounce. I'm a computer scientist studying at the University of Toronto. C, C++, Python,
+
   and everything in-between.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zacharyvincze.com" # the base hostname & protocol for your site, e.g. http://example.com
