@@ -11,6 +11,5 @@ sudo apt install nodejs
 2. Start the local server.
 ```
 bundler exec jekyll serve
-# For live reloading, use the following instead
-bundler exec jekyll serve --livereload
 ```
+For live reloading, use the `--livereload` flag.
