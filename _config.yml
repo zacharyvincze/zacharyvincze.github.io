@@ -21,24 +21,22 @@
 title: Zachary Vincze
 email: zacharyvincze@gmail.com
 description:
-  I'm a computer scientist studying at the University of Toronto. C, C++, Python,
+  Hey there, I study computer science at the University of Toronto. Java, C++, Python,
   and everything in-between.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zacharyvincze.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zacharyvincze
-github_username:  zacharyvincze
+github_username: zacharyvincze
 stackoverflow_userpage: https://stackoverflow.com/users/5182842/zachary-vincze
 excerpt_separator: "<!--more-->"
 highlighter: rouge
 pageinate: 5
 
-meta-description:
-  I'm a computer scientist studying at the University of Toronto. C, C++, Python, and everything in-between. Zach Vincze, Zachary Vincze, Zachariah Vincze.
+meta-description: I'm a computer scientist studying at the University of Toronto. C, C++, Python, and everything in-between. Zach Vincze, Zachary Vincze, Zachariah Vincze.
 
 # Build settings
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
