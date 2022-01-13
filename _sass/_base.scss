@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 $header-font: Poppins, Ubuntu, sans-serif;
 $text-font: Ubuntu, sans-serif;
@@ -11,20 +11,74 @@ $logo-size: 28px;
 $default-line-spacing: 1.5;
 $condensed-line-spacing: 1.35;
 
-$base-color: #FFFFFF;
+$base-color: #ffffff;
 $accent-color: #f44336;
-$text-color: #FFFFFF;
+$text-color: #ffffff;
 $background-color: #121212;
-$floating-color: #1F1F1F;
+$floating-color: #1f1f1f;
 $dark-floating-color: #191919;
-$faded-color: #EFEFEF;
-$bottom-border-color: #1F1F1F;
+$faded-color: #efefef;
+$bottom-border-color: #1f1f1f;
 
-$mobile-viewport: 600px;
+$mobile-viewport: 800px;
 $tablet-viewport: 1200px;
 
 // CSS reset
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
     margin: 0;
     padding: 0;
     border: 0;

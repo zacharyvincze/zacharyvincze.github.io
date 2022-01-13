@@ -1,21 +1,21 @@
 .portfolio {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 
     a {
         opacity: 1;
         color: white;
+        flex: 1 0 calc(50% - 40px);
+        margin: 20px;
     }
 
     .portfolio-item {
-        transition: 0.2s all ease;
-        margin: 20px;
-        width: 500px;
         background-color: $floating-color;
         cursor: pointer;
+        transition: 0.2s all ease;
+        border: 0px solid $accent-color;
         border-color: $accent-color;
-        border-left: 0px solid $accent-color;
 
         .project-image {
             height: 300px;
@@ -35,5 +35,11 @@
 
 .portfolio .portfolio-item:hover {
     border-left: 20px solid $accent-color;
-    width: 480px;
+    flex: 1 0 calc(25% - 60px);
+}
+
+@media only screen and (max-width: $tablet-viewport) {
+    .portfolio a {
+        flex-basis: calc(100% - 40px);
+    }
 }
