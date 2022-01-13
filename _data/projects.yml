@@ -8,3 +8,8 @@
 - name: CHIP-8
   description: A CHIP-8 interpreter written in C++ using SDL2 to drive graphics and input.
   link: https://github.com/zacharyvincze/chip8
+
+- name: zacharyvincze.github.io
+  description: This website. A statically compiled Jekyll project hosted on
+      Github Pages.
+  link: https://github.com/zacharyvincze/zacharyvincze.github.io
