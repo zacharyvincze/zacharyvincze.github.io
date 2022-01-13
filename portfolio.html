@@ -1,0 +1,20 @@
+---
+layout: default
+title: Portfolio
+---
+
+<div class="content-container">
+    <div class="portfolio">
+        {% for project in site.data.projects %}
+        <a href="{{ project.link }}">
+            <div class="portfolio-item">
+                <div class="project-image"></div>
+                <div class="project-info">
+                    <h2 class="project-title">{{ project.name }}</h2>
+                    <p class="text-small text-faded project-description">{{ project.description }}</p>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+    </div>
+</div>

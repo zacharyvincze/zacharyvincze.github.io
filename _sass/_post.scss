@@ -2,7 +2,8 @@
     margin-left: 440px;
 }
 
-.post-content, .posts {
+.post-content,
+.posts {
     max-width: 900px;
     margin: 0 auto;
     padding: 125px 100px 10px;
@@ -69,18 +70,20 @@
 }
 
 @media only screen and (max-width: $tablet-viewport) {
-    .post-content, .posts {
+    .post-content,
+    .posts {
         width: auto;
         flex: 0;
     }
 
     .content-container {
-        margin-left: 240px;
+        margin-left: 300px;
     }
 }
 
 @media only screen and (max-width: $mobile-viewport) {
-    .post-content, .posts {
+    .post-content,
+    .posts {
         width: auto;
         flex: 0;
         padding: 25px;

@@ -1,0 +1,39 @@
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+        opacity: 1;
+        color: white;
+    }
+
+    .portfolio-item {
+        transition: 0.2s all ease;
+        margin: 20px;
+        width: 500px;
+        background-color: $floating-color;
+        cursor: pointer;
+        border-color: $accent-color;
+        border-left: 0px solid $accent-color;
+
+        .project-image {
+            height: 300px;
+            background-color: $dark-floating-color;
+        }
+
+        .project-info {
+            padding: 20px;
+
+            .project-title {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.portfolio .portfolio-item:hover {
+    border-left: 20px solid $accent-color;
+    width: 480px;
+}

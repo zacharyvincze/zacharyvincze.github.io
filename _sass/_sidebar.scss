@@ -1,7 +1,7 @@
 .sidebar {
     position: fixed;
-    width: 400px;
-    padding: 20px 20px;
+    width: 440px;
+    padding: 20px 0px;
     background-color: $floating-color;
     transition: 0.2s all ease;
     z-index: 1;
@@ -12,8 +12,9 @@
         top: 50%;
         left: 0px;
         transform: translateY(-50%);
-        width: 400px;
-        padding: 0 20px;
+        width: 440px;
+        padding: 0 0px;
+
         .logo {
             display: block;
             font-size: $header-size;
@@ -22,14 +23,14 @@
             font-weight: bold;
             text-align: center;
             opacity: 1;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-family: $header-font;
         }
 
         .profile-picture {
             height: 200px;
             width: 200px;
-            background-image: url('/assets/images/profile-picture.png');
+            background-image: url("/assets/images/profile-picture.png");
             background-color: $dark-floating-color;
             background-size: 250px;
             background-position: center;
@@ -43,21 +44,57 @@
             font-size: $small-size;
             text-align: center;
         }
-        
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $dark-floating-color;
+
+            a {
+                padding: 20px 0;
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+                border-color: $accent-color;
+                border-left: 0px solid $accent-color;
+            }
+
+            a:hover {
+                border-left: 10px solid $accent-color;
+                width: calc(100% - 10px);
+                background-color: $background-color;
+                color: white;
+            }
+
+            a.active {
+                border-left: 10px solid $accent-color;
+                width: calc(100% - 10px);
+                background-color: $background-color;
+                color: white;
+            }
+        }
+
         .social-media {
             a {
-                transition: none;
                 opacity: 1;
             }
-            margin-top: 20px;
+
+            a:hover {
+                background-color: $background-color;
+            }
+
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
+            background-color: $dark-floating-color;
+
             .icon {
                 width: 30px;
+                padding: 20px;
             }
             .icon path {
                 fill: #8d8d8d;
-                transition: all .2s ease;
+                transition: all 0.2s ease;
             }
             .icon:hover path {
                 opacity: 1;
@@ -74,39 +111,14 @@
             }
         }
     }
-
-    .projects {
-        padding: 20px 0;
-
-        font-family: $header-font;
-
-        h2 {
-            padding-bottom: 10px;
-        }
-
-        a {
-            font-family: $text-font;
-            font-size: $small-size;
-            opacity: 0.75;
-            transition: all 0.2s ease;
-            display: block;
-            padding-bottom: 10px;
-            line-height: 1.5;
-        }
-
-        a:hover {
-            color: $accent-color;
-            opacity: 1;
-        }
-    }
 }
 
 @media only screen and (max-width: $tablet-viewport) {
     .sidebar {
-        width: 200px;
+        width: 300px;
 
         .profile {
-            width: 200px;
+            width: 300px;
 
             .profile-picture {
                 height: 150px;
@@ -134,7 +146,7 @@
             position: relative;
             transform: translateY(0);
             width: 100%;
-            padding: 20px 0;
+            padding-top: 20px;
 
             .profile-picture {
                 display: none;
@@ -147,10 +159,6 @@
     }
 
     .description {
-        margin: 0 20px;
-    }
-
-    .social-media {
         margin: 0 20px;
     }
 }
