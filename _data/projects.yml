@@ -4,6 +4,7 @@
 
 - name: VulpineEngine
   description: An in-development 2D game engine written in C++.
+  link: https://github.com/zacharyvincze/VulpineEngine
 
 - name: CHIP-8
   description: A CHIP-8 interpreter written in C++ using SDL2 to drive graphics and input.
