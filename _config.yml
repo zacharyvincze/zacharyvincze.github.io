@@ -20,8 +20,7 @@
 
 title: Zachary Vincze
 email: zacharyvincze@gmail.com
-description: Computer science student at the University of Toronto.
-    I make and break things for fun.
+description: Hey there, I'm a computer science student at the University of Toronto.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zacharyvincze.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: zacharyvincze

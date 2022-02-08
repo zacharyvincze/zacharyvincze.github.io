@@ -1,5 +1,7 @@
-- name: About
-  link: /about/
-
-- name: Home
+- name: Dev Log
   link: /
+  page_name: index.html
+
+- name: Portfolio
+  link: /portfolio
+  page_name: portfolio.html
